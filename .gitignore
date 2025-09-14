@@ -1,0 +1,13 @@
+# Ignore build, install, and log directories
+/build/
+/install/
+/log/
+
+# Ignore .vscode settings (if using Visual Studio Code)
+.vscode/
+
+# Ignore CMake build files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+
