@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>jetson_motor_control</name>
+  <name>jetson_motor_controller</name>
   <version>0.0.1</version>
-  <description>Motor control package for Jetson Nano with heat management</description>
-  <maintainer email="user@jetson.local">jetson_user</maintainer>
+  <description>ROS2 motor controller for Jetson Nano with dual L298N drivers</description>
+  
+  <maintainer email="your_email@example.com">Your Name</maintainer>
   <license>MIT</license>
 
   <depend>rclpy</depend>
-  <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
 
   <test_depend>ament_copyright</test_depend>
