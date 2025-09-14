@@ -6,7 +6,7 @@ source /opt/ros/galactic/setup.bash
 cd ~/ros2_ws
 source install/setup.bash
 
-./install/jetson_motor_controller/lib/jetson_motor_controller/motor_controller_node
+ros2 run jetson_motor_controller motor_controller_node
 
 ```
 
@@ -23,5 +23,5 @@ source /opt/ros/galactic/setup.bash
 cd ~/ros2_ws
 source install/setup.bash
 
-ros2 topic pub /cmd_vel geometry_msgs/Twist "linear: { 0.3, y: 0.0, z: 0.0}, angular: {x:0.0, y: 0.0 , z: 0.0}"
+ros2 topic pub /cmd_vel geometry_msgs/Twist "{linear: {x: 0.5}, angular: {z: 0.0}}"
 ```
