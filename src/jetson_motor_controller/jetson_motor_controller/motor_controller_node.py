@@ -46,13 +46,13 @@ class MotorController(Node):
             
             # Motor Driver 1 (Left Motor) - Using different pins to avoid conflicts
             self.MOTOR1_IN1 = 18  # GPIO18
-            self.MOTOR1_IN2 = 16  # GPIO19
-            self.MOTOR1_ENA = 32  # GPIO12 (PWM)
+            self.MOTOR1_IN2 = 19  # GPIO19
+            self.MOTOR1_ENA = 12  # GPIO12 (PWM)
             
             # Motor Driver 2 (Right Motor)  
             self.MOTOR2_IN3 = 11  # GPIO20
             self.MOTOR2_IN4 = 13  # GPIO21
-            self.MOTOR2_ENB = 33  # Changed from 13 to 16 to avoid conflicts
+            self.MOTOR2_ENB = 16  # Changed from 13 to 16 to avoid conflicts
             
             # List all pins we'll use
             self.all_pins = [self.MOTOR1_IN1, self.MOTOR1_IN2, self.MOTOR1_ENA,
