@@ -6,7 +6,8 @@ source /opt/ros/galactic/setup.bash
 cd ~/ros2_ws
 source install/setup.bash
 
-python3 -m jetson_motor_control.motor_controller_node
+./install/jetson_motor_controller/lib/jetson_motor_controller/motor_controller_node
+
 ```
 
 build:
